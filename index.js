@@ -132,3 +132,27 @@ taar*/
 
 //console.log(circumference)
 
+
+// matemaatika
+
+//Math.PI
+
+//console.log(Math.PI)
+
+//let x = 3.21;
+//let y = 2;
+//let z;
+
+//z = Math.round(x); ümardab
+//z = Math.floor(x); ümardab alla
+//z = Math.ceil(x); ümardab ülesse
+//z = Math.trunc(x); võtab komakoha ära
+//z = Math.pow(x, y); astendamine
+//z = Math.sqrt(x); ruutjuur
+//z = Math.log(x); logaritm
+//z = Math.sin(x); siinius, koosinius ja tangens, vaheta sin con ja tan liht
+//let max = Math.max(x, y, z);
+//let min = Math.min(x, y, z)
+
+
+//console.log(z);
