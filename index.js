@@ -83,9 +83,51 @@ taar*/
 
 //RASKE (indexis on ka bodys nupp jne tehtud)
 
-let username;
+//let username;
+
+//document.getElementById("mySubmit").onclick = function (){
+  //  username = document.getElementById("myText").value;
+   // document.getElementById("myH1").textContent = `Heihopsti ${username}`
+  //  console.log(username);
+//}
+
+// TÜÜBI MUUTMINE
+
+//let age = window.prompt("Vana sa oled?");
+//age = Number(age);
+//age+=1;
+
+//console.log(age, typeof age);
+
+//let x = "pitsa";
+//let y = "pitsa";
+//let z = "pitsa";
+
+//x = Number(x);
+//y = String(y);
+//z = Boolean(z)
+
+//console.log(x, typeof x);
+//console.log(y, typeof y);
+//console.log(z, typeof z);
+
+
+// const= variable, mida ei saa muuta peale sisestamist
+
+const PI = 3.14159
+let radius;
+let circumference;
+
+//radius = window.prompt(`Siesta ringi raadius`);
+//radius = Number(radius);
+
+
 
 document.getElementById("mySubmit").onclick = function (){
-    username = document.getElementById("myText").value;
-    console.log(username);
+radius = document.getElementById("myText").value;
+radius = Number(radius);
+circumference = 2 * PI * radius;
+document.getElementById("myH3").textContent = circumference +"cm";
 }
+
+console.log(circumference)
