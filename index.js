@@ -156,3 +156,127 @@ taar*/
 
 
 //console.log(z);
+
+//IF Käsklused
+
+//let age = 25;
+
+//if(age>= 18){
+//  console.log("Sa oled piisavalt vana, et siia sisenenda");
+//}
+//else{
+ // console.log("Sa pead olema vähemalt 18, et saidile tulla");
+//}
+
+//let time = 9;
+
+//if (time < 12 ){
+ // console.log("Hommikust!");
+//}
+//else{
+ // console.log("Head pärastlõunat!")
+//}
+
+//let isStudent = false;
+
+//if(isStudent){
+//  console.log("sa oled õpilane!")
+//}
+//else{
+//  console.log("Sa pole õpilane!")
+//}
+
+// Mitme variablega
+//let age = 25;
+//let hasLicense = false;
+
+//if(age >= 18){
+  //console.log("Sa oled piisavalt vana, et soita!");
+
+  //if(hasLicense){
+    //  console.log("Sul on load!");
+  //}
+  //else{
+   // console.log("Sul pole lube!")
+  //}
+//}
+//else{
+ // console.log("Sa pead olema vähemalt 18, et omada juhilubasid!");
+//}
+
+//const myText = document.getElementById("myText");
+//const mySubmit = document.getElementById("mySubmit");
+//const resultElement = document.getElementById("resultElement")
+//let age;
+
+
+//mySubmit.onclick = function{
+
+//age = myText.value;
+//age = Number(age);
+
+//if(age >= 100){
+//resultElement.textContent = `Mees, sa oled liiga vana`
+//}  
+//else if(age >= 18){
+ // resultElement.textContent = `Sa oled piisavalt vana, et siseneda!`;
+//}
+//else{
+ // resultElement.textContent = `Sa pead olema vähmelat 18!`;
+//}
+//}
+
+// CHECKED PROPERTY
+
+//const myCheckBox = document.getElementById("myCheckBox");
+//const visaBtn = document.getElementById("visaBtn");
+//const masterCardBtn = document.getElementById("masterCardBtn");
+//const payPalBtn = document.getElementById("payPalBtn");
+//const mySubmit = document.getElementById("mySubmit");
+//const subResult = document.getElementById("subResult");
+//const paymentResult = document.getElementById("paymentResult");
+
+//mySubmit.onclick = function(){
+  //if(myCheckBox.checked){
+   // subResult.textContent = `Sa oled subbinud!`;
+  //}
+  //else{
+   // subResult.textContent = `Sa ei ole subbinud!`;
+  //}
+
+  //if(visaBtn.checked){
+   // paymentResult.textContent = `Sa maksad Visaga!`
+  //}
+  //else if(masterCardBtn.checked){
+  //  paymentResult.textContent = `Sa maksad meistrikaardiga!`
+  //}
+  //else if(payPalBtn.checked){
+  //  paymentResult.textContent = `Sa maksad paypaliga!`
+  //}
+//else {
+   // paymentResult.textContent = `vali maksmise tüüp!`
+ // }
+
+//}
+
+
+//Temporary operator
+
+//let age = 21;
+//let message = age >= 18 ? "Sa oled täiskasvanud" : "Sa oled tatt";
+//console.log(message);
+
+//let time = 16;
+//let greeting = time < 12 ? "Hommikust!" : "Head pärastlõunat!"
+//console.log(greeting)
+
+//let isStudent = true;
+//let message = isStudent ? "Sa oled õpilane" : "Sa ei ole õpilane"
+//console.log(message);
+
+//let purchaseAmount = 125;
+//let discount = purchaseAmount >= 100 ? 10 : 0;
+//console.log(`Kogusumma on $${purchaseAmount - purchaseAmount * (discount/100)}`);
+
+//SWITCHID
+
