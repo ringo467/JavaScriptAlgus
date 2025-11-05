@@ -280,3 +280,184 @@ taar*/
 
 //SWITCHID
 
+//forEach
+
+/*let numbers = [1, 2, 3, 4, 5];
+numbers.forEach(double);
+numbers.forEach(display);
+numbers.forEach(tripple);
+numbers.forEach(square);
+function double (element, index, array){
+  array[index] = element * 2;
+}
+function tripple (element, index, array){
+  array[index] = element * 3;
+}
+function square(element, index, array){
+  array[index] = Math.pow(element, 2);
+}
+function display (element){
+  console.log(element);
+}
+*/
+
+/*let fruits = ["apple", "orange", "banana", "coconut"];
+
+fruits.forEach(capitalize);
+fruits.forEach(upperCase);
+fruits.forEach(display);
+
+function upperCase(element, index, array){
+array[index] = element.toUpperCase();
+}
+
+function capitalize(element, index, array){
+  array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+}
+
+function display(element){
+  console.log(element);
+} 
+*/
+
+//.map()
+
+/*const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map(square);
+const cubes = numbers.map(cube);
+
+const squares = numbers.map(square);
+
+console.log(squares);
+
+function square(element){
+  return Math.pow(element, 2);
+}
+function square(element){
+  return Math.pow(element, 3);
+}*/
+
+/*const students = ["mees", "naine", "tüdruk", "poiss"];
+const studentsUpper = students.map(upperCase);
+const.studentsLower= students.map(lowerCase);
+
+console.log(studentsUpper);
+
+function upperCase(element){
+  return element.toUpperCase();
+}
+function lowerCase(element){
+  return element.toLowerCase();
+}
+*/
+
+/*const dates = ["2024-1-10", "2025-2-23", "2023-3-30"];
+const formattedDates = dates.map(formattedDates);
+
+console.log(formattedDates);
+
+function formDates(element){
+  const parts = element.split("-");
+  return `${parts[1]}/${parts[2]/${parts[0]}}`;
+}*/
+
+//.filter()
+
+/*let numbers = [1, 2, 3, 4, 5, 6, 7];
+let evenNums = numbers.filter(isEven);
+let oddNums = numbers.filter(isOdd);
+
+console.log(oddNums);
+
+
+function isEven(element){
+  return element % 2 === 0;
+}
+
+function isOdd(element){
+  return element % 2 !== 0;
+}*/
+
+/*const ages = [16, 17, 18, 18, 19, 20, 60];
+const adults = ages.filter(isAdult);
+
+console.log(isAdult);
+
+function isAdult(element){
+  return element >=18;
+}
+
+function isChild(element){
+  return element <=18;
+}*/
+
+/*const words = ["apple", "banana", "coconut", "pineapple"];
+const shortWords = words.filter(getShortWords);
+const longWords = words.filter(getLongWords);
+
+console.log(ShortWords);
+
+function getShortWords(element){
+  return element.length <= 6;
+}
+
+function getLongWords(element){
+  return element.length >= 6;
+}*/
+
+// .reduce()
+
+/*const prices = [3, 30, 10, 25, 8, 18];
+
+const total = prices.reduce(sum);
+
+console.log(`$${total.toFixed(2)}`);
+
+function sum(accumulator, element){
+  return accumulator + element;
+}*/
+
+/*const grades = [75, 50, 90, 80, 65, 95];
+
+const maximum = grades.reduce(getMax);
+
+console.log(maximum);
+
+function getMax(accumulator, element){
+  return Math.max(accumulator, element);
+}*/
+
+//function expressions
+
+/*const hello = function(){
+  console.log("Hello");
+}
+
+hello();*/
+
+/*setTimeout(function(){
+  console.log("Hello");
+}, 3000);*/
+
+/*const numbers = [1, 2, 3, 4, 5, 6];
+const squares = numbers.map(function square(element){
+  return Math.pow(element, 2);
+});
+
+console.log(squares);
+*/
+
+// arrow functions
+
+/*const hello = (name) => {console.log(`Hello ${name}`)
+console.log(`You are ${age} years old`)};
+
+hello("Bro", 25);*/
+š
+//setTimeout(() => console.log("Hello"), 3000);
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const squares = numbers.map((element) => Math.pow(element, 2));
+
+console.log(squares);
