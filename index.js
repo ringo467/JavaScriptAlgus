@@ -453,11 +453,151 @@ console.log(squares);
 console.log(`You are ${age} years old`)};
 
 hello("Bro", 25);*/
-š
 //setTimeout(() => console.log("Hello"), 3000);
-
+/*
 const numbers = [1, 2, 3, 4, 5, 6];
 
 const squares = numbers.map((element) => Math.pow(element, 2));
 
-console.log(squares);
+console.log(squares);*/
+
+// OBJEKTID
+
+//constructor
+
+/*function Car(make, model, year, color){
+  this.make = make,
+  this.model = model,
+  this.year = year,
+  this.color = color
+  this.drive = function(console.log(`You drive the ${this.model}` ))
+}
+
+const car1 = new Car("Ford", "Mustang", 2024, "Red");
+const car2 = new Car("Chevy", "Camaro", 2025, "Blue");
+const car3 = new Car("Dodge", "Charger", 2026, "Silver");
+
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+
+console.log(car2.make);
+console.log(car2.model);
+console.log(car2.year);
+console.log(car2.color);
+
+console.log(car3.make);
+console.log(car3.model);
+console.log(car3.year);
+console.log(car3.color);*/
+
+//class
+
+/*class Product{
+  constructor(name,price){
+  this.name = name;
+  this.price = price;
+}
+  this.displayProduct = function(){
+    console.log(`Product: ${this.name}`);
+    console.log(`Price: $${this.price}`);
+  }
+  calculateTotal(salesTax){
+    return this.price + (this.price * salesTax);
+  }
+
+}
+
+const salesTax = 0.05;
+
+const product1 = new Product("Shirt", 19.99);
+const product2 = new Product("Pants", 39.99);
+
+product1.displayProduct();
+product2.displayProduct();*/
+
+//Static
+
+/*class MathUtil {
+  static PI = 3.14159;
+
+  static getDiameter(radius){
+    return radius * 2;
+  }
+  static getCircumference(radius){
+    return 2 * this.PI * radius;
+  }
+}
+
+console.log(MathUtil.PI);
+console.log(MathUtil.getDiameter(10));
+console.log(MathUtil.getCircumference(10));*/
+
+//inheritance
+
+/*class Animal{
+  alive = true;
+
+  eat(){
+    console.log(`This ${this.name} is eating`);
+  }
+
+  sleep(){
+    console.log(`This ${this.name} is sleeping`);
+  }
+}
+
+class Rabbit extends Animal{
+  name = "rabbit";
+}
+
+const rabbit = new Rabbit();
+
+console.log(rabbit.alive);
+rabbit.eat;
+rabbit.sleep;*/
+
+//getter/setter
+
+/*class Rectangle{
+
+  constructor(width, height){
+    this.width = width;
+    this.height = height;
+  }
+
+  set width(newWidth){
+    if(newWidth > 0){
+      this._width = newWidth;
+    }
+    else{
+      console.error("Width must be a positive nr");
+    }
+  }
+  set width(newHeight){
+    if(newHeight > 0){
+      this._height = newHeight;
+    }
+    else{
+      console.error("Height must be a positive nr");
+    }
+   }
+
+   get width(){
+    return `${this._width.toFixed(1)cm`};
+   }
+
+   get height(){
+    return this._height;
+   }
+
+   get area(){
+    return this._width * this._height;
+   }
+}
+
+const rectangle = new Rectangle(3, 4);
+
+console.log(rectangle.width);
+console.log(rectangle.height);*/
