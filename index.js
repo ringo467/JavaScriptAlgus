@@ -585,7 +585,7 @@ rabbit.sleep;*/
    }
 
    get width(){
-    return `${this._width.toFixed(1)cm`};
+    return `${this._width.toFixed(1)cm``};
    }
 
    get height(){
@@ -601,3 +601,116 @@ const rectangle = new Rectangle(3, 4);
 
 console.log(rectangle.width);
 console.log(rectangle.height);*/
+
+
+//Destructing
+
+/*let a = 1;
+let b = 2;
+
+[a, b] = [b, a];
+
+console.log(a);
+console.log(b);*/
+
+
+/*const colors = ["red", "green", "blue", "white"];
+
+[colors[0], colors[4]] = [colors[4], colors[0]];
+
+console.log(colors;)*/
+
+/* const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
+
+console.log(firstColor);
+console.log(secondColor);
+console.log(thirdColor);
+console.log(extraColors);*/
+
+/*
+function displayPerson({firstName, lastName, age, job}){
+console.log(ǹame: $(firstName) $(lastName)`);
+console.log(`age: ${age}`);
+console.log(`job: ${job}`);
+}
+const person1 = {
+firstName: "spongebob"
+lastName: "Squareman"
+age: 30,
+job: "Fry cook"}
+
+const person2 = {
+firstName: "patrick"
+lastName: "Star"
+age: 34,
+}
+
+const{firstName, lastName, age, job="Unemployed"} = person1;
+
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+console.log(job);*/
+
+//Nested objects
+
+/*const person = {
+  fullName: "Sponge Square",
+  age: 30,
+  isStudent: true,
+  hobbies: ["karate", "fishing", "cooking"],
+  address:{
+    street: "124 Conch st.",
+    city: "Bikini",
+    country: "Int. water"
+  }
+}
+
+for(const property in person.address){
+  console.log(person.address[property]);
+}
+
+console.log(person.fullName);
+console.log(person.age);
+console.log(person.isStudent);
+console.log(person.hobbies[2]);
+console.log(person.address.street);*/
+
+/*class Person{
+  constructor(age, name, ...address){
+    this.name = name;
+    this.age = age;
+    this.address = new Adress(...address);
+  }
+
+}
+
+class Adress {
+
+  constructor(street, city, country){
+    this.street = street;
+    this.city = city;
+    this.country = country;
+  }
+}
+
+const person1 = new Person("sponge", 30, "124 conch", "bikini", "int waters");
+
+const person 2 = new Person("patrick", 34, "128 cocnh", "bikini", "int waters");
+
+console.log(person1.address.street);*/
+
+
+const fruits = [{name: "apple", color: "red", calories: 95}, 
+  {name: "orange", color: "orange", calories: 45},
+  {name: "banana", color: "yellow", calories: 105}, 
+  {name: "coconut", color: "white", calories: 159}, 
+  {name: "pineapple", color: "yellow", calories: 37}];
+
+  console.log(fruits[1].calories);
+
+  fruits.push({name: "grapes", color: "purple", calories: 62});
+
+  const fruitNames = fruits.map(fruit => fruit.name);
+
+  console.log(fruitNames);
