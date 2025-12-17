@@ -701,7 +701,7 @@ const person 2 = new Person("patrick", 34, "128 cocnh", "bikini", "int waters");
 console.log(person1.address.street);*/
 
 
-const fruits = [{name: "apple", color: "red", calories: 95}, 
+/*const fruits = [{name: "apple", color: "red", calories: 95}, 
   {name: "orange", color: "orange", calories: 45},
   {name: "banana", color: "yellow", calories: 105}, 
   {name: "coconut", color: "white", calories: 159}, 
@@ -713,4 +713,103 @@ const fruits = [{name: "apple", color: "red", calories: 95},
 
   const fruitNames = fruits.map(fruit => fruit.name);
 
-  console.log(fruitNames);
+  console.log(fruitNames);*/
+
+
+  //eventListener
+
+ /* const myBox = document.getElementById("myBox");
+ const myButton = document.getElementById("myButton");
+
+function changeColor(event){
+  event.target.style.backgroundColor = "tomato";
+  event.target.textContent = "Aia!";
+}
+
+  myBox.addEventListener("click", changeColor);
+
+  myBox.addEventListener("mouseover", event => {
+      event.target.style.backgroundColor = "yellow";
+      event.target.textContent = "Ära tee!";
+  })
+
+  myBox.addEventListener("mouseout" event => {
+      event.target.style.backgroundColor = "lightgreen";
+  event.target.textContent = "Click me";
+  })*/
+
+  /*const myBox = document.getElementById("myBox");
+  const moveAmount = 10;
+  let x = 0;
+  let y = 0;
+
+  document.addEventListener("keydown", event => {
+    if(event.key.startsWith("Arrow"){
+      switch(event.key){
+        case "ArrowUp" :
+          y -= moveAmount;
+          break;
+        case "ArrowDown"
+        y += moveAmount;
+        break;
+      }
+    })
+  })
+
+  document.addEventListener("keydown", event =>{
+    myBox.style.backgroundColor = "tomato";
+  });
+
+  document.addEventListener("keyup", event =>{
+    myBox.textContent = "Jehhu";
+  });*/
+
+  /*const myButton = document.getElementById("myButton");
+  const myImg = document.getElementById("myImg");
+
+  myButton.addEventListener("click", event =>{
+    
+    if(myImg.style.display === "none"){
+      myImg.style.display = "block";
+      myButton.textContent = "Hide";
+    }
+    
+    myImg.style.display = "none";
+    myButton.textContent = "Show";
+  })*/
+
+
+//NodeList
+
+/*let buttons = document.querySelectorAll(".myButtons");
+
+buttons.forEach(button => {
+  button.style.backgroundColor = "green"; 
+  button.textContent += "jess";
+} )
+
+buttons.forEach(button => {
+  button.addEventListener("click", event => {
+    event.target.style.backgroundColor = "tomato";
+  })
+})*/
+
+//classList
+
+const myButton = document.getElementById("myButton");
+
+myButton.classList.add("enabled");
+myButton.addEventListener("click", event => {
+
+  if(event.target.classList.contains("disabled")){
+    event.target.textContent += "angery";
+  }
+  else{
+    event.target.classList.replace("enabled", "disabled");
+  }
+  event.target.classList.replace("enabled", "disabled");
+})
+
+myButton.classList.add("enabled");
+myButton.classList.remove("enabled");
+myButton.classList.add("hover");
